@@ -11,7 +11,7 @@
         <div class="endgame">
             <div class="text"></div>
         </div>
-        <table>
+        <table onclick="audio.play();">
             <tr>
                 <td class="cell" id="0"></td>
                 <td class="cell" id="1"></td>
@@ -29,8 +29,16 @@
             </tr>
         </table>
 
-        <button class="glow-on-hover" onclick="startGame()">Replay</button>
+        <button class="glow-on-hover" onclick="audio2.play();startGame()">
+            Replay
+        </button>
 
         <script src="script.js"></script>
+        <script type="text/javascript">
+            const audio = new Audio();
+            audio.src = "./audio.wav";
+            const audio2 = new Audio();
+            audio2.src = "./aud.wav";
+        </script>
     </body>
 </html>
